@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Pacifico&display=swap');
+.edutitle{
+    font-family: "Condiment", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 25px;
+}
+.education-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-color: #ffffff;
+  }
+  
+  .education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(17, 17, 17, 0.2);
+    background-color: #e8e1e1; 
+    border-color: rgb(209, 86, 86);
+  }
+  
+  .education-card:hover .text-primary {
+    color: rgb(209, 86, 86);
+  }
+  
+  .education-card:hover .card-text {
+    color: #201f1f; 
+  }
+  
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+
+  .text-primary {
+    font-family: "Smokum", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+  .text-sec{
+    font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  .text-muted{
+    font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Smokum&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  .text-per{
+    font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+    
+  }
+@media (max-width: 768px) {
+  .navbar {
+      height: auto;
+      padding: 10px;
+      flex-direction: row; 
+      justify-content: space-between;
+  }
+
+  .navtitle {
+      font-size: 20px;
+      display: inline-block;
+      margin-left: 10px;
+  }
+
+  .navimg {
+      display: inline-block;
+      margin-left: 0;
+      margin-right: 10px;
+      height: 40px; 
+      width: 40px; 
+  }
+
+  .custom-toggler {
+      margin-left: auto; /* Push toggle to the far right */
+  }
+
+  .navlinks {
+      flex-direction: column;
+      margin: 10px 0;
+      text-align: center;
+      display: none; /* Hidden initially */
+  }
+
+  .navlinks.active {
+      display: flex; /* Display when active */
+  }
+
+  .navlinks li {
+      margin: 5px 0;
+  }
+
+  .button {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .button > button {
+      margin: 5px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+      flex-direction: row; /* Keep everything in one line */
+      align-items: center;
+      justify-content: space-between; /* Distribute elements evenly */
+  }
+
+  .nav-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navtitle {
+      font-size: 18px;
+      margin-left: 10px;
+  }
+
+  .navimg {
+      margin-left: 0;
+      margin-right: 10px;
+      height: 35px; /* Slightly smaller for smaller screens */
+      width: 35px;
+  }
+
+  .custom-toggler {
+      margin-left: auto; /* Ensure toggle button stays to the right */
+  }
+}
+
+  

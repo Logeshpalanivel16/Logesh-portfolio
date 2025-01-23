@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+.portfolio-footer {
+    background-color: #060606;
+    color: #f1f1f1;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .portfolio-footer h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .portfolio-footer .about-text,
+  .portfolio-footer .contact-list {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .portfolio-footer .contact-list li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-footer a {
+    color: #f1f1f1;
+    
+    text-decoration: none;
+  }
+  
+  .portfolio-footer li:hover {
+    color: rgb(212, 51, 51);
+  }
+  .portfolio-footer a:hover {
+    color: rgb(212, 51, 51);
+  }
+  
+  .portfolio-footer .social-icons a {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .portfolio-footer .social-icons a:hover {
+    color: red
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+  .portfolio-footer .about-text {
+  font-size: 16px;
+  line-height: 1;
+  animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #fff; }
+}
+
+  h5{
+    font-family: "Anton SC", sans-serif;
+  }
+  

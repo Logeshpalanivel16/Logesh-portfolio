@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+
+h2 {
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Oleo Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  padding: 50px 70px;
+  display: flex;
+}
+
+.colorModeContainer {
+  display: flex;
+}
+
+.hero {
+  max-width: 100%;
+  border-radius: 50%;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: 1%;
+  opacity: 0; 
+  animation: fadeZoomIn 1.5s ease-out forwards; 
+  animation-delay: 0.3s; 
+}
+
+@keyframes fadeZoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1); 
+  }
+}
+
+
+.info {
+  text-align: center;
+  padding: 100px;
+  opacity: 0; 
+  animation: fadeSlideIn 1.5s ease-out forwards; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  opacity: 0; 
+  transform: translateY(50px);
+  animation: fadeSlideIn 1s ease-out forwards; 
+  animation-delay: 0.5s; 
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 10px 0;
+  color: black;
+  opacity: 0; 
+  transform: translateY(50px); 
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 1s; 
+}
+
+.socialIcons {
+  margin: 20px 0;
+}
+
+.socialIcons a {
+  margin: 0 15px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: red;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Changa", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 150px; 
+  }
+
+  .hero {
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    padding: 0; 
+    margin-top: 20px; 
+  }
+
+  .name {
+    font-size: 1.8rem; 
+
+  .title {
+    font-size: 1.2rem; 
+  }
+
+  .socialIcons {
+    justify-content: center; 
+    margin-top: 15px;
+  }
+
+  .socialIcons a {
+    margin: 0 10px;
+  }
+
+  .description {
+    font-size: 0.9rem; 
+    line-height: 1.5; 
+  }
+
+  .icon {
+    margin-right: 5px; 
+  }
+
+  p {
+    margin: 10px 0; 
+  }
+}
+}

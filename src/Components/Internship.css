@@ -1,0 +1,76 @@
+.internship-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .internship-card {
+    max-width: 600px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  .internship-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .internship-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .internship-company {
+    font-size: 20px;
+    font-weight: normal;
+    color: #34495e;
+    margin-bottom: 5px;
+  }
+  
+  .internship-duration {
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+  }
+  
+  .internship-responsibilities {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #2c3e50;
+  }
+  
+  .internship-responsibilities li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Condiment&family=Pacifico&display=swap');
+
+  .interntit{
+    font-family: "Condiment", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 25px;
+
+  }
+  

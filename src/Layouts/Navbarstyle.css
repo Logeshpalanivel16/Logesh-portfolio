@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+.navbar {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navtitle {
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 24px;
+    color: whitesmoke;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.navimg {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-content {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.navlinks {
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    color: white;
+}
+
+.navlinks li {
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navlinks li:hover {
+    color: rgba(242, 139, 139, 0.751);
+    cursor: pointer;
+}
+
+.ml-2 {
+    margin: 10px;
+    border-radius: 0px;
+}
+
+.button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button > button {
+    border-radius: 2px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button > button:hover {
+    background-color: #dc3545;
+    color: white;
+    animation: shake 1s ease;
+    border-color: #dc3545;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.button > button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navlinks {
+        flex-direction: column;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navlinks li {
+        margin: 5px 0;
+    }
+
+    .button {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .button > button {
+        margin: 5px 0;
+    }
+
+    .navtitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navtitle {
+        font-size: 18px;
+    }
+
+    .navimg {
+        margin-left: 0;
+    }
+}
+
+.custom-toggler {
+    border-color: white;
+    background-color: white;
+}
+
+#basic-navbar-nav {
+    background-color: black;
+}
+
+.custom-toggler:focus,
+.custom-toggler:hover {
+    background-color: white;
+    outline: none;
+    border-color: white;
+}

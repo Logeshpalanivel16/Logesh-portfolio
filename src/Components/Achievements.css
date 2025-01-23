@@ -1,0 +1,68 @@
+.container1 {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.achievement-card-short {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card-short:hover {
+  transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-image-short {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+@media (max-width: 767px) {
+  .container1 {
+    padding: 20px 10px;
+  }
+
+  .achievement-card-short {
+    flex-direction: column; 
+    text-align: center; 
+    padding: 10px; 
+  }
+
+  .achievement-image-short {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 15px; 
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .card-text {
+    font-size: 13px; 
+  }
+
+  .row.g-4 {
+    gap: 20px; 
+  }
+}
